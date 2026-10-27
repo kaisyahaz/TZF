@@ -1,0 +1,6 @@
+{
+  "name": "活動決策助手 - 災防決策支援平台",
+  "description": "依據 RENAD 框架整合氣象情資快照、資訊缺口追蹤、T-Minus 決策倒數與 AI 輔助評估的現代化災害應變活動決策平台。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

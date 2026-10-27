@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide non-printable web chrome */
+  header,
+  footer,
+  .no-print,
+  button,
+  .official-ticker-bar {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: #0f172a !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Make print report fill the whole page cleanly */
+  .pdf-report-container {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 1.5cm;
+  }
+
+  /* Ensure page breaks look professional */
+  .page-break-avoid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
